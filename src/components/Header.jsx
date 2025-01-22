@@ -1,15 +1,15 @@
 import React from 'react'
 import Footer from './Footer'
 import Contact from './Contact'
- 
-const Header = ({val}) => {
+import { Link } from "react-router-dom"
+
+const Header = () => {
   return (
     <div> 
-      {val}
-      {
-       val>10 ? <Footer/> : <Contact/>
-      }
-    </div>
+<Link to='/home'>Goto home page</Link>   
+<Link to='/new'>Goto new page</Link>   
+
+ </div>
  
   )
 }
