@@ -20,7 +20,7 @@ export default function Form(){
       const response = await axios.post("http://localhost:5000/register", data);
       console.log(response.status);
       if (response.status === 200) {
-        navigate("/Todo");
+        navigate("/todo");
       } else {
         navigate("/Form1");
       }
@@ -52,7 +52,7 @@ export default function Form(){
           />
         </div>
 
-        <div class="form-group">
+        <div className="form-group">
           <label >Password</label>
           <input
             type="password"
