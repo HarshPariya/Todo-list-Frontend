@@ -1,3 +1,27 @@
-.body{
-    text-align: center;
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aba7db;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #93e573;
+  color: rgb(26, 18, 18);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(213, 195, 195, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+div {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
 }

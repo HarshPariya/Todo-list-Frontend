@@ -31,7 +31,7 @@ export default function Form(){
     <div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label >Name</label>
+          <label >Name : </label>
           <input
             type="name"
             className="border-solid border-2 border-red-600	"
@@ -42,7 +42,7 @@ export default function Form(){
         </div>
 
         <div className="form-group">
-          <label>Email address</label>
+          <label>Email : </label>
           <input
             type="email"
             className="border-solid border-2 border-red-600	"
@@ -53,7 +53,7 @@ export default function Form(){
         </div>
 
         <div className="form-group">
-          <label >Password</label>
+          <label >Password : </label>
           <input
             type="password"
             className="border-solid border-2 border-red-600	"
