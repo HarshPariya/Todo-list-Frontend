@@ -37,7 +37,7 @@ export default function Form(){
             className="border-solid border-2 border-red-600	"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter name"
+            placeholder="Enter Name"
           />
         </div>
 
@@ -48,7 +48,7 @@ export default function Form(){
             className="border-solid border-2 border-red-600	"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter email"
+            placeholder="Enter E-mail"
           />
         </div>
 

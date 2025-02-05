@@ -4,7 +4,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #aba7db;
+  background-color: #b0e8c4;
 }
 
 button {
@@ -12,11 +12,11 @@ button {
   font-size: 16px;
   margin-top: 20px;
   cursor: pointer;
-  background-color: #93e573;
+  background-color: #66f02f;
   color: rgb(26, 18, 18);
   border: none;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(213, 195, 195, 0.1);
+  box-shadow: 0 4px 6px rgba(21, 18, 18, 0.1);
   transition: background-color 0.3s ease;
 }
 
