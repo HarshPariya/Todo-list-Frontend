@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Form1 from "./components/Form1";
 import Todo from "./components/Todo";
+// import Calculator from "./components/Calculator";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<><Form1/></>} />
           <Route path="/home" element={<Home />} />
           <Route path="/todo" element={<Todo/>} />
+          {/* <Route path="/calc" element={<Calculator/>} /> */}
 
         </Routes>
       </BrowserRouter>
