@@ -30,7 +30,7 @@ export default function Form() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-600 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-400 via-purple-500 to-orange-600 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-lg shadow-lg border-2 border-gray-300">
         <h2 className="text-4xl font-semibold text-center text-gray-900 mb-6 tracking-wide"><b><i>Create an Account</i></b></h2>
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
