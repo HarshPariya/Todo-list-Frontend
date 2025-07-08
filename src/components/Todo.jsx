@@ -16,7 +16,7 @@ const Todo = () => {
 
   const fetchTodos = async () => {
     try {
-      const response = await axios.get("https://todo-list-backend-qedk.onrender.com//todos");
+      const response = await axios.get("https://todo-list-backend-qedk.onrender.com/todos");
       setTodolist(response.data);
     } catch (err) {
       console.error(err);
@@ -33,7 +33,7 @@ const Todo = () => {
       };
 
       try {
-        const response = await axios.post("https://todo-list-backend-qedk.onrender.com//todos", newTodo);
+        const response = await axios.post("https://todo-list-backend-qedk.onrender.com/todos", newTodo);
         setTodolist((prevTodoList) => [...prevTodoList, response.data]);
         setTodo("");
         setPriority("Medium");
@@ -46,7 +46,7 @@ const Todo = () => {
 
   const updateTodo = async (id, updatedTodo) => {
     try {
-      const response = await axios.put(`https://todo-list-backend-qedk.onrender.com//${id}`, updatedTodo);
+      const response = await axios.put(`https://todo-list-backend-qedk.onrender.com/${id}`, updatedTodo);
       setTodolist((prevTodoList) =>
         prevTodoList.map((item) => (item._id === id ? response.data : item))
       );
@@ -59,7 +59,7 @@ const Todo = () => {
     const confirmDelete = window.confirm("Are you sure you want to delete this task?");
     if (confirmDelete) {
       try {
-        await axios.delete(`https://todo-list-backend-qedk.onrender.com//todos/${id}`);
+        await axios.delete(`https://todo-list-backend-qedk.onrender.com/todos/${id}`);
         setTodolist((prevTodoList) => prevTodoList.filter((item) => item._id !== id));
       } catch (err) {
         console.error(err);
@@ -72,7 +72,7 @@ const Todo = () => {
     const updatedTodo = { ...todoToUpdate, completed: !todoToUpdate.completed };
 
     try {
-      const response = await axios.put(`https://todo-list-backend-qedk.onrender.com//${id}`, updatedTodo);
+      const response = await axios.put(`https://todo-list-backend-qedk.onrender.com/${id}`, updatedTodo);
       setTodolist((prevTodoList) =>
         prevTodoList.map((item) => (item._id === id ? response.data : item))
       );
@@ -88,7 +88,7 @@ const Todo = () => {
         await Promise.all(
           todoList
             .filter((item) => item.completed)
-            .map((item) => axios.delete(`https://todo-list-backend-qedk.onrender.com//todos/${item._id}`))
+            .map((item) => axios.delete(`https://todo-list-backend-qedk.onrender.com/todos/${item._id}`))
         );
         setTodolist((prevTodoList) => prevTodoList.filter((item) => !item.completed));
       } catch (err) {
